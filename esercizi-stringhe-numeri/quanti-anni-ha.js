@@ -11,3 +11,14 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var eta;
+var mancanti_x100;
+var annocorrente =2019;
+var annodinascita =1982;
+var anni;
+
+anni = annocorrente-annodinascita;
+mancanti_x100 = 100-anni;
+
+console.log('ha '+anni+' e ne mancano '+mancanti_x100+' per arrivare a 100');

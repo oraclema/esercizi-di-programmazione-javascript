@@ -13,4 +13,8 @@
   http://www.imparareaprogrammare.it
 */
 
-var time = 0;
+var secondi = 12560;
+var minuti = Math.ceil(secondi/60);
+var ore = Math.ceil(minuti/60);
+
+console.log(secondi,[minuti],[ore]);
