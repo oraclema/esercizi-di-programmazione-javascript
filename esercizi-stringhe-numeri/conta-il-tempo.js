@@ -13,8 +13,13 @@
   http://www.imparareaprogrammare.it
 */
 
-var secondi = 12560;
-var minuti = Math.ceil(secondi/60);
-var ore = Math.ceil(minuti/60);
+const sectot = 12560;
+var orainmin = 60;
+var orainsec = 60*60;
 
-console.log(secondi,[minuti],[ore]);
+var ore = Math.round(sectot/orainsec);
+var min = Math.round((sectot-(orainsec*ore))/60);
+var sec = sectot-(ore*orainsec)-(min*orainmin);
+
+
+console.log(`${ore} ore, ${min} minuti e ${sec} secondi`);

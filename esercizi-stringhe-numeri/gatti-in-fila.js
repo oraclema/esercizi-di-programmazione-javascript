@@ -17,3 +17,15 @@
 
   http://www.imparareaprogrammare.it
 */
+var catsnr;
+var catsfila;
+var file;
+var restano;
+
+catsnr = 42;
+catsfila = 8;
+file = Math.round(catsnr/catsfila);
+restano = catsnr-(catsfila*file);
+
+console.log('Ci sono '+Math.round(file)+' file');
+console.log(Math.ceil(restano)+' gatti fuori');
